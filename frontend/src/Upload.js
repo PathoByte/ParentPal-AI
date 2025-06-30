@@ -10,7 +10,7 @@ export default function Upload() {
     if (file) formData.append('image', file);  
     else formData.append('text', text);  
 
-    const response = await axios.post('http://localhost:5000/api/ask', formData);  
+    const response = await axios.post('http://localhost:5000/api/explain', formData);  
     console.log(response.data.answer); // Display this in a "Result" component  
   };  
 

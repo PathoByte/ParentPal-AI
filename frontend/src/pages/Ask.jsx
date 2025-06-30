@@ -10,7 +10,6 @@ import {
   Spinner,
   Fade,
   Icon,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { MdQuestionAnswer } from "react-icons/md";
 import UploadBox from "../components/UploadBox";
@@ -35,7 +34,7 @@ export default function Ask() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8000/api/explain", {
+      const response = await fetch("http://127.0.0.1:8000/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: question }),

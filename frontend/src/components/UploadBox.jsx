@@ -34,7 +34,7 @@ const UploadBox = ({ onResult }) => {
     if (question) formData.append("question", question);
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/explain", formData, {
+      const response = await axios.post("http://127.0.0.1:8000/api/explain", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       onResult(response.data);

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Ask from "./pages/Ask";
 import Pricing from "./pages/Pricing";
+import Answer from "./pages/Answer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ask" element={<Ask />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/answer" element={<Answer />} /> 
           </Routes>
         </Box>
       </Router>
